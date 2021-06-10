@@ -1,0 +1,60 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build",
+    "test": "npx jest"
+  },
+  "bin": {
+    "page-loader": "dist/bin/page-loader.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skepto77/backend-project-lvl3.git"
+  },
+  "keywords": [
+    "download",
+    "utility"
+  ],
+  "author": "Ilya Grachev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skepto77/backend-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/skepto77/backend-project-lvl3#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.5",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "jest": "^27.0.4",
+    "jest-cli": "^27.0.4",
+    "nock": "^13.1.0"
+  },
+  "dependencies": {
+    "all": "0.0.0",
+    "axios": "^0.21.1",
+    "commander": "^7.2.0",
+    "dependencies": "0.0.1",
+    "fs": "0.0.1-security",
+    "jsdom": "^16.6.0",
+    "lodash": "^4.17.21",
+    "os": "^0.1.1",
+    "parse-url": "^5.0.3",
+    "to": "^0.2.9",
+    "upgrade": "^1.1.0"
+  }
+}
