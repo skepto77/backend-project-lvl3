@@ -6,8 +6,7 @@ on:
   - push
   - pull_request
 
-env:
-  CI: true
+
 
 jobs:
   build:
@@ -34,6 +33,8 @@ jobs:
           cache: 'npm'
       - name: run install
         run: make install
+        env:
+          CI: true
       - name: run linter
         run: make lint
       - name: Test & publish code coverage
