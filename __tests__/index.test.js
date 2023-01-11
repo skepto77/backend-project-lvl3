@@ -1,7 +1,8 @@
+/* eslint-disable object-curly-newline */
 import path from 'path';
 import os from 'os';
 import fs from 'fs/promises';
-
+import { test, expect, describe, beforeEach } from '@jest/globals';
 import nock from 'nock';
 import pageLoader from '../src/index.js';
 
